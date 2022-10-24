@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".bills"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/txt17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroyxb"
+        android:text="BILL SLPITTING"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bbt"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/backb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="gh"/>
+
+    <EditText
+        android:id="@+id/txt18"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rb"
+        android:fontFamily="@font/gilroy"
+        android:gravity="center"
+        android:hint="Enter Label"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt17"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/txty"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rb"
+        android:fontFamily="@font/gilroy"
+        android:gravity="center"
+        android:hint="Enter Amount"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt18"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/txt19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gilroy"
+        android:text="PEOPLE"
+        android:textColor="#C4C4C4"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/txty"
+        app:layout_constraintTop_toBottomOf="@+id/txty" />
+
+    <EditText
+        android:id="@+id/butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rb"
+        android:hint="Number 1-5"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt19"
+        app:layout_constraintEnd_toEndOf="@+id/txt18"
+        app:layout_constraintTop_toTopOf="@+id/txt19" />
+
+    <EditText
+        android:id="@+id/txt20"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:inputType="text"
+        android:text="NULL"
+        android:textColor="#ffffff"
+        android:hint="PERSON 1 NAME"
+        android:textAlignment="center"
+        android:textColorHint="#808080"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt19" />
+
+    <EditText
+        android:id="@+id/txt21"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:inputType="text"
+        android:hint="PERSON 2 NAME"
+        android:text="NULL"
+        android:textAlignment="center"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt20"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txt22"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:inputType="text"
+        android:hint="PERSON 3 NAME"
+        android:textAlignment="center"
+        android:text="NULL"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt21" />
+    <EditText
+        android:id="@+id/txt23"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:inputType="text"
+        android:hint="PERSON 4 NAME"
+        android:textAlignment="center"
+        android:text="NULL"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt22" />
+
+    <EditText
+        android:id="@+id/txt24"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:text="NULL"
+        android:hint="PERSON 5 NAME"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#808080"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt23" />
+
+
+    <Button
+        android:id="@+id/btn18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt19"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:onClick="ss"
+        android:text="SHOW PREVIOUS"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn17" />
+
+
+    <Button
+        android:id="@+id/btn17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt19"
+        android:backgroundTint="#3D3D3D"
+        android:fontFamily="@font/gilroy"
+        android:text=" SAVE"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn18"
+        app:layout_constraintEnd_toEndOf="@+id/txt24"
+        app:layout_constraintStart_toStartOf="@+id/txt22"
+        app:layout_constraintTop_toBottomOf="@+id/txt24" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

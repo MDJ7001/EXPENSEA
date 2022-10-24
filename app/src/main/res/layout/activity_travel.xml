@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".travel"
+        android:background="@color/black"
+        android:padding="40dp">
+        <Button
+            android:id="@+id/bbt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="gh"/>
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroyxb"
+            android:text="TRAVEL BUDGET"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:layout_constraintTop_toBottomOf="@id/bbt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+    <ListView
+        android:id="@+id/liss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="20dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/t1"
+        android:textAlignment="viewStart">
+
+    </ListView>
+
+
+
+
+        <Button
+
+            android:id="@+id/btn17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ib"
+            android:backgroundTint="#3D3D3D"
+            android:fontFamily="@font/gilroy"
+            android:onClick="ta"
+            android:text=" ADD TRIP"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
